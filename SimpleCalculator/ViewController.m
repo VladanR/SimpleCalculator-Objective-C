@@ -19,7 +19,6 @@
     // Do any additional setup after loading the view.
 }
 
-
 - (IBAction)operation:(id)sender {
     if (currentOperation == 0) result = currentNumber;
     else {
@@ -35,6 +34,9 @@
                 break;
             case 4:
                 result = result / currentNumber;
+                break;
+            case 5:
+                result = sqrt(currentNumber);
                 break;
             default:
                 break;

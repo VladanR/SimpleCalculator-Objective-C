@@ -220,21 +220,32 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm1-gb-3mi">
-                                <rect key="frame" x="0.0" y="44" width="375" height="409"/>
+                                <rect key="frame" x="16" y="44" width="343" height="329"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adu-bB-gGA">
+                                <rect key="frame" x="281" y="372" width="78" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65685224529999997" green="0.85245764260000001" blue="0.80794662240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="square-root (1)">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPW-kE-hay"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82378038545753418" green="0.85098039219999999" blue="0.97637374517671249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mTL-mE-g7e" secondAttribute="bottom" id="8H0-f0-2y8"/>
-                            <constraint firstItem="mTL-mE-g7e" firstAttribute="top" secondItem="zm1-gb-3mi" secondAttribute="bottom" id="ARl-4L-gOF"/>
                             <constraint firstItem="zm1-gb-3mi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HeD-rv-guO"/>
-                            <constraint firstAttribute="trailing" secondItem="zm1-gb-3mi" secondAttribute="trailing" id="bSF-kP-2rr"/>
+                            <constraint firstItem="zm1-gb-3mi" firstAttribute="bottom" secondItem="mTL-mE-g7e" secondAttribute="top" constant="-80" id="V8v-QN-SRc"/>
+                            <constraint firstAttribute="trailing" secondItem="zm1-gb-3mi" secondAttribute="trailing" constant="16" id="bSF-kP-2rr"/>
                             <constraint firstItem="mTL-mE-g7e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="maY-tF-NbD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mTL-mE-g7e" secondAttribute="trailing" constant="16" id="saL-AA-RJ3"/>
-                            <constraint firstItem="zm1-gb-3mi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="t1o-Er-Ww4"/>
+                            <constraint firstItem="zm1-gb-3mi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t1o-Er-Ww4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -244,7 +255,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square-root (1)" width="48" height="48"/>
+    </resources>
 </document>

@@ -19,6 +19,5 @@
 - (IBAction)digitPressed:(id)sender;
 - (IBAction)cancel:(id)sender;
 - (IBAction)operation:(id)sender;
-
 @end
 
