@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,255 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mTL-mE-g7e">
+                                <rect key="frame" x="16" y="453" width="343" height="325"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lrZ-VC-COo">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="73.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMV-dc-gRz">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wP8-wn-Z4b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68O-DQ-Ezy">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chZ-Wv-IeC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4g-To-nOG">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sSs-sU-om4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc6-hS-whg">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.64313725489999995" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="/">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCc-qU-dnf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3V8-DE-eMn">
+                                        <rect key="frame" x="0.0" y="83.666666666666629" width="343" height="74"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uam-dk-1Zl">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="74"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWC-6r-puU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxE-DV-ybX">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="74"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IoV-c8-NY8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-1n-4Tv">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="74"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIY-Xw-wLZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38C-lE-Uey">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="74"/>
+                                                <color key="backgroundColor" red="0.64313725489999995" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="*">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cg3-Av-8AA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-lk-8zn">
+                                        <rect key="frame" x="0.0" y="167.66666666666663" width="343" height="73.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUK-kq-cG2">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4H-QA-9r0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-fq-M82">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Di-dy-nGN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbV-40-EMZ">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roI-mb-hVS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNy-B6-bVc">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.64313725489999995" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqx-5W-xMa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MrA-Yp-hEq">
+                                        <rect key="frame" x="0.0" y="251.33333333333334" width="343" height="73.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf0-dK-0OM">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.23921568630000001" green="0.69411764710000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QXU-Be-BzH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wc-eq-hDR">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.64313725489999995" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftC-Wd-uHP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go9-ix-2nq">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.64313725489999995" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnz-Gt-vW1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-cp-BeM">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="73.666666666666671"/>
+                                                <color key="backgroundColor" red="0.64313725489999995" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsE-qF-5dc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="x4S-1b-anL"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm1-gb-3mi">
+                                <rect key="frame" x="16" y="44" width="343" height="329"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adu-bB-gGA">
+                                <rect key="frame" x="281" y="372" width="78" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65685224529999997" green="0.85245764260000001" blue="0.80794662240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="square-root (1)">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="operation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPW-kE-hay"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82378038545753418" green="0.85098039219999999" blue="0.97637374517671249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mTL-mE-g7e" secondAttribute="bottom" id="8H0-f0-2y8"/>
+                            <constraint firstItem="zm1-gb-3mi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HeD-rv-guO"/>
+                            <constraint firstItem="zm1-gb-3mi" firstAttribute="bottom" secondItem="mTL-mE-g7e" secondAttribute="top" constant="-80" id="V8v-QN-SRc"/>
+                            <constraint firstAttribute="trailing" secondItem="zm1-gb-3mi" secondAttribute="trailing" constant="16" id="bSF-kP-2rr"/>
+                            <constraint firstItem="mTL-mE-g7e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="maY-tF-NbD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mTL-mE-g7e" secondAttribute="trailing" constant="16" id="saL-AA-RJ3"/>
+                            <constraint firstItem="zm1-gb-3mi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t1o-Er-Ww4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="zm1-gb-3mi" id="Ic8-7U-Ai6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square-root (1)" width="48" height="48"/>
+    </resources>
 </document>
